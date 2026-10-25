@@ -582,3 +582,8 @@ textarea.inp { height: 110px; padding: 12px 14px; resize: vertical; font-weight:
   .msg { max-width: 88%; }
 }
 .status { white-space: nowrap; }
+.fav { cursor: pointer; }
+.fav.on { color: #e5484d; }
+.fav.on svg path { fill: currentColor; }
+.check, .toggle, .qty button { user-select: none; }
+.toggle { cursor: pointer; }
