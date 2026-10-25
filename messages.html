@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сообщения — EscrowHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5Z"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 14.4 4l3.1-.3.9 3 2.7 1.6-1 3 1 3-2.7 1.6-.9 3-3.1-.3L12 22l-2.4-2-3.1.3-.9-3-2.7-1.6 1-3-1-3 2.7-1.6.9-3 3.1.3L12 2Z"/><path d="m8.5 12 2.4 2.4 4.6-4.8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+<symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 7h15a1 1 0 0 1 1 1v11H5a1 1 0 0 1-1-1V7Z"/><path d="M4 7l11-3v3M16 13h2"/></symbol>
+<symbol id="i-gamepad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12a4 4 0 0 1 4 4v1a3 3 0 0 1-5.4 1.8L15 13H9l-1.6 1.8A3 3 0 0 1 2 13v-1a4 4 0 0 1 4-4Z"/><path d="M7 10.5v3M5.5 12h3M16 11h.01M18 13h.01"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3M15 8l2 2"/></symbol>
+<symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5Z"/><path d="M14.5 6.5 17 4l3 3-2.5 2.5"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></symbol>
+<symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-fire" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2s5 4.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 1-3.5S9 11 11 11c0-4 1-9 1-9Z"/></symbol>
+<symbol id="i-support" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/></symbol>
+<symbol id="i-refund" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 2.4-5.7L4 8.5"/><path d="M4 4v4.5h4.5"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+</defs>
+</svg>
+<div class="topbar">
+  <div class="container">
+    <div><span class="dot"></span>Сейчас на гарантии: <b>1 284 сделки</b> на сумму <b>3,2 млн ₽</b></div>
+    <div class="topbar-links">
+      <a href="#">Как работает эскроу</a>
+      <a href="#">Поддержка 24/7</a>
+      <a href="#">RU · ₽</a>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="container">
+    <div class="header-main">
+      <a href="index.html" class="logo"><span class="logo-mark"><svg><use href="#i-shield"/></svg></span><b>Escrow<span>Hub</span></b></a>
+      <label class="search">
+        <svg><use href="#i-search"/></svg>
+        <input type="search" placeholder="Игра, сервис, подписка или продавец">
+        <button class="btn btn-dark">Найти</button>
+      </label>
+      <div class="header-actions">
+        <a href="create.html" class="btn btn-ghost hide-sm"><svg><use href="#i-plus"/></svg><span>Продать</span></a>
+        <a href="messages.html" class="icon-btn" title="Сообщения"><svg><use href="#i-chat"/></svg><span class="badge">2</span></a>
+        <div class="balance"><div><small>Баланс</small><b>12 450 ₽</b></div><a href="wallet.html" class="btn btn-primary"><svg><use href="#i-plus"/></svg><span>Пополнить</span></a></div>
+        <a href="profile.html" class="me"><span class="avatar">HI</span><svg><use href="#i-chev"/></svg></a>
+      </div>
+    </div>
+    <nav class="nav"><a href="catalog.html"><svg><use href="#i-grid"/></svg>Все категории</a><span class="sep"></span><a href="catalog.html"><svg><use href="#i-user"/></svg>Аккаунты</a><a href="catalog.html"><svg><use href="#i-gamepad"/></svg>Игровые ценности</a><a href="catalog.html"><svg><use href="#i-key"/></svg>Подписки и ключи</a><a href="catalog.html"><svg><use href="#i-tool"/></svg>Цифровые услуги</a><a href="catalog.html"><svg><use href="#i-code"/></svg>Софт</a><a href="catalog.html"><svg><use href="#i-box"/></svg>Другое</a><span class="sep"></span><a href="catalog.html" class="hot"><svg><use href="#i-fire"/></svg>Скидки дня</a></nav>
+  </div>
+</header>
+<main class="container">
+  <div class="crumbs"><a href="profile.html">Профиль</a>/<span>Сообщения</span></div>
+  <div class="chat">
+    <aside class="dialogs">
+      <label class="search"><svg><use href="#i-search"/></svg><input placeholder="Поиск по диалогам"></label>
+      <div class="dlg-list"><div class="dlg on"><span class="avatar" style="background:#3b5bfd">AC</span><div><b>AccStore</b><p>Данные отправил, проверяйте 👍</p></div><em>14:06<i>2</i></em></div><div class="dlg"><span class="avatar" style="background:#8e3bdc">SU</span><div><b>SubHub</b><p>Спасибо за покупку!</p></div><em>вчера</em></div><div class="dlg"><span class="avatar" style="background:#e07b00">GI</span><div><b>GiftLab</b><p>Арбитр подключился к сделке</p></div><em>пн</em></div><div class="dlg"><span class="avatar" style="background:#0f9d6b">SO</span><div><b>SoftPoint</b><p>Ключ активирован?</p></div><em>12 окт</em></div></div>
+    </aside>
+    <section class="conv">
+      <div class="conv-head"><span class="avatar">AC</span><div><b>AccStore<svg class="verified"><use href="#i-check"/></svg></b><span>● онлайн</span></div></div>
+      <div class="msgs">
+        <span class="sys"><svg><use href="#i-lock"/></svg>Оплата 8 600 ₽ заморожена на эскроу · 14:02</span>
+        <div class="msg">Здравствуйте! Спасибо за заказ, выдаю аккаунт.<time>14:03</time></div>
+        <span class="sys"><svg><use href="#i-box"/></svg>Продавец передал данные товара · 14:06</span>
+        <div class="msg">Данные отправил, проверяйте 👍 Почту лучше сменить сразу.<time>14:06</time></div>
+        <div class="msg me">Спасибо, захожу. Баланс вижу, сейчас поменяю почту.<time>14:09</time></div>
+      </div>
+      <div class="compose"><input class="inp" placeholder="Сообщение…"><button class="btn btn-primary"><svg><use href="#i-arrow"/></svg></button></div>
+    </section>
+    <aside class="deal">
+      <h4>Сделка #48 213</h4>
+      <div class="deal-item"><span class="thumb g4"></span><div><b>Steam KZ · баланс 30 000 ₸</b><span>8 600 ₽</span></div></div>
+      <ol class="steps">
+        <li class="step done"><span class="step-ico"><svg><use href="#i-card"/></svg></span><div><b>Оплачено</b><span>14:02</span></div></li>
+        <li class="step done"><span class="step-ico"><svg><use href="#i-box"/></svg></span><div><b>Товар передан</b><span>14:06</span></div></li>
+        <li class="step current"><span class="step-ico"><svg><use href="#i-eye"/></svg></span><div><b>Ваша проверка</b><span>осталось 71 ч 54 мин</span></div></li>
+        <li class="step"><span class="step-ico"><svg><use href="#i-wallet"/></svg></span><div><b>Выплата продавцу</b><span>после подтверждения</span></div></li>
+      </ol>
+      <a href="#" class="btn btn-primary">Подтвердить получение</a>
+      <a href="#" class="btn btn-ghost">Открыть спор</a>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="logo-mark"><svg><use href="#i-shield"/></svg></span>EscrowHub</a>
+        <p>Маркетплейс цифровых товаров. Деньги покупателя хранятся на эскроу-счёте, и продавец получает их только после подтверждения заказа.</p>
+      </div>
+      <div>
+        <h5>Покупателям</h5>
+        <ul><li><a href="catalog.html">Каталог</a></li><li><a href="profile.html">Мои заказы</a></li><li><a href="#">Как работает эскроу</a></li><li><a href="#">Открыть спор</a></li></ul>
+      </div>
+      <div>
+        <h5>Продавцам</h5>
+        <ul><li><a href="create.html">Разместить объявление</a></li><li><a href="wallet.html">Кошелёк и выплаты</a></li><li><a href="#">Комиссии</a></li><li><a href="#">Верификация</a></li></ul>
+      </div>
+      <div>
+        <h5>Информация</h5>
+        <ul><li><a href="#">Условия использования</a></li><li><a href="#">Конфиденциальность</a></li><li><a href="#">Поддержка 24/7</a></li><li><a href="#">Блог</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EscrowHub. Безопасные сделки с гарантией оплаты через эскроу.</span>
+      <div class="pay"><span>МИР</span><span>СБП</span><span>VISA</span><span>Mastercard</span><span>USDT</span></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
